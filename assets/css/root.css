@@ -1,0 +1,45 @@
+/* ! :root */
+
+:root {
+  /* ? Color palette */
+  --c1: #ffe7b9;
+  --c1b: rgba(255,231,185,0.33);
+  --c2: #813a20;
+  --c2b: #813a20d3;
+  --c3: #30211b;
+  --c4: #3a1406;
+  --c5: #f9c561;
+  --c6: #f9b237;
+  --c7: #f1a108;
+  --c7b: rgba(241, 161, 8, 0.5);
+  --c8: #fff8ec;
+
+  /* ? Fonts */
+  --comfortaa: "Comfortaa", cursive;
+  --open-sans: "Open Sans", sans-serif;
+  --font-2: "Gudea", sans-serif;
+  --font-3: "Oswald", sans-serif;
+  --font-5: "Roboto", sans-serif;
+  --font-6: "Playfair Display", serif;
+
+  /* ? Font and header sizing | xs,s,m,l */
+  --font-size-1: clamp(0em, 0vw, 0em);
+  --font-size-2: clamp(0em, 0vw, 0em)
+  --font-size-3: clamp(0em, 0vw, 0em)
+
+  --heading-size-1: clamp(0em, 0vw, 0em);
+  --heading-size-2: clamp(0em, 0vw, 0em);
+  --heading-size-3: clamp(0em, 0vw, 0em);
+
+  /* ? Img size */
+  --img-: clamp(0px, 0vw, 0px);
+
+  /* ? SVG */
+  --svg-bowl: url(/abart_0.4/assets/svg/bxs-bowl-hot.svg);
+  --svg-drink: url(/abart_0.4/assets/svg/bxs-drink.svg);
+  --svg-group: url(/abart_0.4/assets/svg/bxs-group.svg);
+  --svg-circle: url(/abart_0.4/assets/svg/check-circle.svg);
+
+  /* ? SVG size */
+  --svg-icon: clamp(4em, 6vw, 6em);
+}
