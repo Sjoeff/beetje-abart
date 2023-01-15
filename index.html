@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Gudea:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/root.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -27,9 +31,11 @@
         <li class="navbar__menu-item">
           <a class="navbar__menu-item-link" href="#info">info</a>
         </li>
+        <!--
         <li class="navbar__menu-item">
           <a class="navbar__menu-item-link" href="#prijzen">prijzen</a>
         </li>
+        -->
         <li class="navbar__menu-item">
           <a class="navbar__menu-item-link" href="#contact">contact</a>
         </li>
@@ -39,27 +45,16 @@
   <main>
     <!-- ! landing -->
     <section id="home" class="landing">
-      <div class="logo">
-        <img
-          src="assets/images/logo.png"
-          alt="Logo van beetje.abart"
-          title="Logo"
-          class="logo__img"
-        />
+      <div class="landing__inner">
+        <h2 class="landing__inner-title">
+          Beleef de restaurant ervaring thuis
+        </h2>
         <button class="btn">
           <a href="#contact" class="btn-link">boek nu</a>
         </button>
       </div>
-      <div class="sideimg">
-        <img
-          src="assets/images/portret03.jpg"
-          alt="Foto van Bart Linssen"
-          title="Bart Linssen"
-          class="sideimg__img"
-        />
-      </div>
     </section>
-    <!-- ! menukaart en info -->
+    <!-- ! menukaart en pricing -->
     <section id="info" class="menu-info">
       <div class="menu-info-menukaart">
         <h3 class="menu-info-menukaart__title">Voorbeeldmenu</h3>
@@ -70,7 +65,7 @@
         </p>
         <h5 class="menu-info-menukaart__dish-title">Amuse</h5>
         <p class="menu-info-menukaart__dish-text">
-          Nori-geitenkaas bal met gefrituurd rijstpapier - met furikale kruiden
+          Nori-geitenkaas bal met gefrituurd rijstpapier - met furikake kruiden
           die lijken te zweven op je bord
         </p>
         <h5 class="menu-info-menukaart__dish-title">Voorgerecht</h5>
@@ -79,12 +74,12 @@
         </p>
         <h5 class="menu-info-menukaart__dish-title">Tussengerecht</h5>
         <p class="menu-info-menukaart__dish-text">
-          Ronde mul gepocheerd met gebrande parelui - pomme fondantgedresseerd
+          Rode mul gepocheerd met gebrande parelui - pomme fondant gedresseerd
           met een contrasterende kokos chorizo saus.
         </p>
         <h5 class="menu-info-menukaart__dish-title">Hoofdgerecht</h5>
         <p class="menu-info-menukaart__dish-text">
-          Pcanha, 24 uur gegaard en ontzettend mals - met portsaus erwtencreme,
+          Picanha, 24 uur gegaard en ontzettend mals - met portsaus erwtencreme,
           groene asperges en jamon iberico krokantjes
         </p>
         <h5 class="menu-info-menukaart__dish-title">Nagerecht</h5>
@@ -93,118 +88,6 @@
           honingraat paradijs.
         </p>
       </div>
-      <div class="menu-info-info">
-        <h2 class="menu-info-info__title">beetje.abart</h2>
-        <p class="menu-info-info__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa impedit
-          voluptatibus beatae laboriosam atque illum laudantium recusandae
-          perspiciatis iusto nihil doloremque obcaecati expedita repellendus
-          similique omnis ab amet iste porro illo, commodi ea! Doloribus tempore
-          architecto dolorum quibusdam.
-        </p>
-      </div>
-    </section>
-    <section class="plussers">
-      <!-- ! plusser -->
-      <div class="plusser__card">
-        <i class="plusser__card-icon icon-drink"></i>
-        <h4 class="plusser__card-title">wijn, cocktails en speciaalbieren</h4>
-        <div class="plusser__card-text">
-          Kies uit een scala van lokale of wereldwijd bekende dranken. Rode of
-          witte wijn. Bier van de Klep of een fruitige sterke cocktail.
-        </div>
-      </div>
-      <div class="plusser__card">
-        <i class="plusser__card-icon icon-bowl"></i>
-        <h4 class="plusser__card-title">restaurant in huis</h4>
-        <div class="plusser__card-text">
-          Geniet van een professionele kok aan huis die een buitengewoon 4 of 5
-          gangen diner verzorgd. Geen afwas!
-        </div>
-      </div>
-      <div class="plusser__card">
-        <i class="plusser__card-icon icon-group"></i>
-        <h4 class="plusser__card-title">groepen van 6 t/m 20 personen</h4>
-        <div class="plusser__card-text">
-          Nodig je vrienden en familie uit! Een uniek cadeau voor je favoriete
-          gezelschap. Deel de ervaring met je bekende.
-        </div>
-      </div>
-    </section>
-    <!-- ! img-gal -->
-    <section class="img-gal">
-      <img
-        src="assets/images/gerecht01.jpg"
-        alt="Foto van een gerecht"
-        title="Friet met kip"
-        class="img-gal__img"
-      />
-      <img
-        src="assets/images/gerecht02.jpg"
-        alt="Foto van een gerecht"
-        title="Friet met kip"
-        class="img-gal__img"
-      />
-      <img
-        src="assets/images/gerecht03.jpg"
-        alt="Foto van een gerecht"
-        title="Friet met kip"
-        class="img-gal__img"
-      />
-    </section>
-    <!-- ! review -->
-    <section id="prijzen" class="reviews">
-      <div class="review">
-        <img
-          src="assets/images/person-1.jpg"
-          alt="Foto van review schrijver"
-          class="review__avatar"
-        />
-        <p class="review__text">
-          Omdat we iets te vieren hadden hebben we thuiskok Bart Linssen
-          uitgenodigd om te komen koken. Zeer verrast door zijn heerlijke
-          culinaire verrassingen. Een luxe restaurant gevoel, maar dan in je
-          eigen huis. Echt een aanrader! Chapeau!
-        </p>
-      </div>
-      <div class="review">
-        <img
-          src="assets/images/person-2.jpg"
-          alt="Foto van review schrijver"
-          class="review__avatar"
-        />
-        <p class="review__text">
-          Bart is een geweldige kok aan huis. We hadden een verrassingsdiner
-          voor vrienden, een etentje als verrassing bij ons thuis. Bart heeft
-          een fantastisch 5-gangen diner voor ons klaargemaakt. Vooraf komt hij
-          thuis op bezoek om onze wensen te bespreken. Alles is bij hem
-          mogelijk. Het was voor hem ook geen probleem om voor enkele personen
-          vegetarisch te koken. Hij verzorgt de complete avond, van borden en
-          bestek tot de wijn en het chocolaatje bij de koffie. Wij hebben een
-          onvergetelijke avond gehad. Als verrassing kwam er tijdens het
-          hoofdgerecht een pianist spelen. Dat was ook erg leuk! Bart is een
-          hele fijne kok en gastheer; flexibel, vriendelijk en professioneel. Na
-          afloop laat hij de keuken netjes achter en neemt hij de afwas weer
-          mee!?
-        </p>
-      </div>
-      <div class="review">
-        <img
-          src="assets/images/person-3.jpg"
-          alt="Foto van review schrijver"
-          class="review__avatar"
-        />
-        <p class="review__text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error sed
-          optio amet voluptas, esse odio at provident. Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Consectetur quod est corporis in
-          tempora blanditiis minus debitis et fugit officia, quae ex ratione
-          excepturi iste sit.
-        </p>
-      </div>
-    </section>
-    <!-- ! pricing -->
-    <section class="price">
       <div class="pricing">
         <table class="pricing__table">
           <tbody class="pricing__table-body">
@@ -224,45 +107,214 @@
               <td class="pricing__table-body-row-data">pianist per uur</td>
               <td class="pricing__table-body-row-data">€70,-</td>
             </tr>
+            <caption class="pricing__table-body-caption">
+              Arrangement is inclusief: brood, amuse en friandise. Servetten,
+              servies en bestek.
+            </caption>
           </tbody>
         </table>
-      </div>
 
-      <img
-        src="assets/images/pianist.jpeg"
-        alt="Foto van pianist"
-        title="Daan Janssen"
-        class="price__side-img"
-      />
+        <img
+          src="assets/images/pianist.jpeg"
+          alt="Foto van pianist"
+          title="Daan Janssen"
+          class="price__side-img"
+        />
+      </div>
     </section>
-    <!-- ! contact -->
-    <section id="contact" class="contact">
-      <h2 class="contact__form-title">contact</h2>
-      <form action="#" class="contact__form">
-        <input
-          type="text"
-          name="name"
-          class="contact__form-input"
-          placeholder="Volledige naam"
-        />
-        <input
-          type="email"
-          name="name"
-          class="contact__form-input"
-          placeholder="E-mail adres"
-        />
-        <textarea
-          class="contact__form-textarea"
-          name="textarea"
-          cols="30"
-          rows="10"
-          placeholder="Uw bericht hier"
-        ></textarea>
-        <button class="btn btn-link">Verstuur</button>
-      </form>
+    <section class="plussers">
+      <!-- ! plusser -->
+      <div class="plusser__card">
+        <i class="plusser__card-icon icon-drink"></i>
+        <h4 class="plusser__card-title">wijn, cocktails en speciaalbieren</h4>
+        <span class="plusser__icon-hyphen"></span>
+        <div class="plusser__card-text">
+          Kies uit een scala van lokale of wereldwijd bekende dranken. Rode of
+          witte wijn. Speciaalbieren of een fruitige sterke cocktail.
+        </div>
+      </div>
+      <div class="plusser__card">
+        <i class="fa-solid fa-utensils plusser__card-icon"></i>
+        <h4 class="plusser__card-title">restaurant in huis</h4>
+        <span class="plusser__icon-hyphen"></span>
+        <div class="plusser__card-text">
+          Geniet van een professionele kok aan huis die een buitengewoon 4 of 5
+          gangen diner verzorgd. Geen afwas!
+        </div>
+      </div>
+      <div class="plusser__card">
+        <i class="plusser__card-icon icon-group"></i>
+        <h4 class="plusser__card-title">groepen van 6 t/m 20 personen</h4>
+        <span class="plusser__icon-hyphen"></span>
+        <div class="plusser__card-text">
+          Nodig je vrienden en familie uit! Een uniek cadeau voor je favoriete
+          gezelschap. Deel de ervaring met je bekende.
+        </div>
+      </div>
     </section>
     <!-- ! img-gal -->
     <section class="img-gal">
+      <img
+        src="assets/images/gerecht01.jpg"
+        alt="Foto van een gerecht"
+        title="Friet met kip"
+        class="img-gal__img"
+      />
+      <img
+        src="assets/images/portret01.jpg"
+        alt="Foto van een gerecht"
+        title="Friet met kip"
+        class="img-gal__img img-gal__portret"
+      />
+      <img
+        src="assets/images/gerecht03.jpg"
+        alt="Foto van een gerecht"
+        title="Friet met kip"
+        class="img-gal__img"
+      />
+    </section>
+    <!-- ! review -->
+    <section id="contact" class="reviews">
+      <div class="review-wrapper">
+        <div class="review">
+          <div class="review__stars-name-wrapper">
+            <span class="review__name">Kees de Koning</span>
+            <div class="review__stars">
+              <span class="review__stars-star"
+                ><i class="fa-solid fa-star"></i
+              ></span>
+              <span class="review__stars-star"
+                ><i class="fa-solid fa-star"></i
+              ></span>
+              <span class="review__stars-star"
+                ><i class="fa-solid fa-star"></i
+              ></span>
+              <span class="review__stars-star"
+                ><i class="fa-solid fa-star"></i
+              ></span>
+              <span class="review__stars-star"
+                ><i class="fa-solid fa-star"></i
+              ></span>
+            </div>
+          </div>
+          <p class="review__text">
+            Omdat we iets te vieren hadden hebben we thuiskok Bart Linssen
+            uitgenodigd om te komen koken. Zeer verrast door zijn heerlijke
+            culinaire verrassingen. Een luxe restaurant gevoel, maar dan in je
+            eigen huis. Echt een aanrader! Chapeau!
+          </p>
+        </div>
+        <div class="review">
+          <div class="review__stars-name-wrapper">
+            <span class="review__name">Anita Maassen</span>
+            <div class="review__stars">
+              <span class="review__stars-star"
+                ><i class="fa-solid fa-star"></i
+              ></span>
+              <span class="review__stars-star"
+                ><i class="fa-solid fa-star"></i
+              ></span>
+              <span class="review__stars-star"
+                ><i class="fa-solid fa-star"></i
+              ></span>
+              <span class="review__stars-star"
+                ><i class="fa-solid fa-star"></i
+              ></span>
+              <span class="review__stars-star"
+                ><i class="fa-solid fa-star"></i
+              ></span>
+            </div>
+          </div>
+          <p class="review__text">
+            Bart is een geweldige kok aan huis. We hadden een verrassingsdiner
+            voor vrienden, een etentje als verrassing bij ons thuis. Bart heeft
+            een fantastisch 5-gangen diner voor ons klaargemaakt. Vooraf komt
+            hij thuis op bezoek om onze wensen te bespreken. Alles is bij hem
+            mogelijk. Het was voor hem ook geen probleem om voor enkele personen
+            vegetarisch te koken. Hij verzorgt de complete avond, van borden en
+            bestek tot de wijn en het chocolaatje bij de koffie. Wij hebben een
+            onvergetelijke avond gehad. Als verrassing kwam er tijdens het
+            hoofdgerecht een pianist spelen. Dat was ook erg leuk! Bart is een
+            hele fijne kok en gastheer; flexibel, vriendelijk en professioneel.
+            Na afloop laat hij de keuken netjes achter en neemt hij de afwas
+            weer mee!?
+          </p>
+        </div>
+        <div class="review">
+          <div class="review__stars-name-wrapper">
+            <span class="review__name">Gino Pietermaai</span>
+            <div class="review__stars">
+              <span class="review__stars-star"
+                ><i class="fa-solid fa-star"></i
+              ></span>
+              <span class="review__stars-star"
+                ><i class="fa-solid fa-star"></i
+              ></span>
+              <span class="review__stars-star"
+                ><i class="fa-solid fa-star"></i
+              ></span>
+              <span class="review__stars-star"
+                ><i class="fa-solid fa-star"></i
+              ></span>
+              <span class="review__stars-star"
+                ><i class="fa-regular fa-star"></i
+              ></span>
+            </div>
+          </div>
+          <p class="review__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error sed
+            optio amet voluptas, esse odio at provident. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Consectetur quod est corporis in
+            tempora blanditiis minus debitis et fugit officia, quae ex ratione
+            excepturi iste sit.
+          </p>
+        </div>
+      </div>
+      <div class="form-wrapper">
+        <h2 class="contact__form-title">contact</h2>
+        <form action="#" class="contact__form">
+          <input
+            type="text"
+            name="name"
+            class="contact__form-input"
+            placeholder="Volledige naam"
+          />
+          <input
+            type="email"
+            name="name"
+            class="contact__form-input"
+            placeholder="E-mail adres"
+          />
+          <textarea
+            class="contact__form-textarea"
+            name="textarea"
+            cols="30"
+            rows="10"
+            placeholder="Uw bericht hier"
+          ></textarea>
+          <button class="btn btn-link">Verstuur</button>
+        </form>
+
+        <div class="contact__contact-info">
+          <ul>
+            <li>Bart Linssen</li>
+            <li>Venlo en omgeving</li>
+            <li>06-12 34 56 78</li>
+            <li>beetje.abart@gmail.com</li>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ! img-gal -->
+    <section class="img-gal">
+      <img
+        src="assets/images/gerecht00.jpg"
+        alt="Foto van een gerecht"
+        title="Friet met kip"
+        class="img-gal__img"
+      />
       <img
         src="assets/images/gerecht04.jpg"
         alt="Foto van een gerecht"
@@ -275,14 +327,14 @@
         title="Friet met kip"
         class="img-gal__img"
       />
-      <img
-        src="assets/images/gerecht06.jpg"
-        alt="Foto van een gerecht"
-        title="Friet met kip"
-        class="img-gal__img"
-      />
     </section>
     <!-- ! footer -->
-    <section></section>
+    <footer class="algemene-voorwaarde">
+      <a class="algemene-voorwaarde-link" href="voorwaarden.pdf"
+        >Algemene voorwaarde</a
+      >
+      <small>wij werken binnen een straal van 50km vanuit Venlo</small>
+      <small>KVK: 1204 4042 249</small>
+    </footer>
   </main>
 </html>
