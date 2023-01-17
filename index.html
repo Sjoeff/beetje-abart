@@ -1,25 +1,59 @@
+<!-- 
+
+
+  Beetje Abart Website
+  Code by Sjoeff
+
+  (c)beetje.abart
+
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- ! meta -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- ! favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
+    <!-- ! load fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Gudea:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- ! font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
+    <!-- ! stylesheets -->
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/root.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-
-    <title>Beetje Abart - beleef de restaurant ervaring thuis</title>
+    <title>
+      Beetje Abart - beleef de restaurant ervaring thuis - uw home chef
+    </title>
   </head>
   <header>
     <!-- ! nav -->
@@ -31,11 +65,6 @@
         <li class="navbar__menu-item">
           <a class="navbar__menu-item-link" href="#info">info</a>
         </li>
-        <!--
-        <li class="navbar__menu-item">
-          <a class="navbar__menu-item-link" href="#prijzen">prijzen</a>
-        </li>
-        -->
         <li class="navbar__menu-item">
           <a class="navbar__menu-item-link" href="#contact">contact</a>
         </li>
@@ -113,7 +142,6 @@
             </caption>
           </tbody>
         </table>
-
         <img
           src="assets/images/pianist.jpeg"
           alt="Foto van pianist"
@@ -125,7 +153,7 @@
     <section class="plussers">
       <!-- ! plusser -->
       <div class="plusser__card">
-        <i class="plusser__card-icon icon-drink"></i>
+        <i class="fa-solid fa-martini-glass-citrus plusser__card-icon"></i>
         <h4 class="plusser__card-title">wijn, cocktails en speciaalbieren</h4>
         <span class="plusser__icon-hyphen"></span>
         <div class="plusser__card-text">
@@ -143,7 +171,7 @@
         </div>
       </div>
       <div class="plusser__card">
-        <i class="plusser__card-icon icon-group"></i>
+        <i class="fa-solid fa-people-group plusser__card-icon"></i>
         <h4 class="plusser__card-title">groepen van 6 t/m 20 personen</h4>
         <span class="plusser__icon-hyphen"></span>
         <div class="plusser__card-text">
@@ -163,7 +191,7 @@
       <img
         src="assets/images/portret01.jpg"
         alt="Foto van een gerecht"
-        title="Friet met kip"
+        title="Bart Linssen"
         class="img-gal__img img-gal__portret"
       />
       <img
@@ -272,7 +300,11 @@
       </div>
       <div class="form-wrapper">
         <h2 class="contact__form-title">contact</h2>
-        <form action="#" class="contact__form">
+        <form
+          action="https://formspree.io/f/mnqynvrv"
+          method="POST"
+          class="contact__form"
+        >
           <input
             type="text"
             name="name"
@@ -281,7 +313,7 @@
           />
           <input
             type="email"
-            name="name"
+            name="email"
             class="contact__form-input"
             placeholder="E-mail adres"
           />
@@ -294,15 +326,22 @@
           ></textarea>
           <button class="btn btn-link">Verstuur</button>
         </form>
-
         <div class="contact__contact-info">
           <ul>
             <li>Bart Linssen</li>
             <li>Venlo en omgeving</li>
             <li>06-12 34 56 78</li>
             <li>beetje.abart@gmail.com</li>
-            <li><i class="fa-brands fa-facebook"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
+            <li>
+              <a href="https://www.facebook.com/beetje.abart/" target="_blank"
+                ><i class="fa-brands fa-facebook social-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/lil_uzi_bart_/" target="_blank"
+                ><i class="fa-brands fa-instagram social-icon"></i
+              ></a>
+            </li>
           </ul>
         </div>
       </div>
@@ -310,7 +349,7 @@
     <!-- ! img-gal -->
     <section class="img-gal">
       <img
-        src="assets/images/gerecht00.jpg"
+        src="assets/images/gerecht00.png"
         alt="Foto van een gerecht"
         title="Friet met kip"
         class="img-gal__img"
